@@ -25,11 +25,13 @@ const Navbar = () => {
             Abhishek <span>Ghosh</span>
           </h1>
         </div>
+
         <div className="right w-1/2 flex justify-end">
           <RiMenuFoldFill
             className="flex md:hidden lg:hidden text-[22px]"
             onClick={toggleSidebar}
           />
+
           {/* For mobile devices */}
           <div
             className={`sidebar lg:hidden fixed top-0 right-0 h-full bg-gray-800 w-[60%] z-50 ${

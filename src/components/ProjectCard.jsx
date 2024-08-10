@@ -17,9 +17,9 @@ const ProjectCard = ({
   liveDemoLink,
 }) => {
   return (
-    <div id="project_card">
+    <div className="project_card">
       <motion.div
-        className={`${className} projects w-full px-0 lg:px-10 py-6 mb-[10vw] flex flex-col lg:flex-row gap-10`}
+        className={`${className} projects w-full px-0 lg:px-5 xl:px-5 py-6 mb-[10vw] flex flex-col lg:flex-row gap-12`}
       >
         <motion.div
           whileHover={{ scale: 1.1 }}
@@ -30,32 +30,43 @@ const ProjectCard = ({
         >
           <img
             src={projectImage}
-            className="lg:h-[300px] rounded-[20px]"
+            className="lg:h-[250px] xl:h-[300px] rounded-[20px]"
             alt=""
           />
         </motion.div>
-        <div className="right w-full lg:w-1/2 px-0 lg:px-[5vw] pt-5">
+
+        <div className="right w-full flex flex-col justify-end lg:w-1/2 px-0 lg:px-[2vw] xl:px-[2vw] pt-5">
           <h1 className="text-[20px] md:text-[30px] lg:text-[22px] font-bold lg:text-center pb-4">
             {title}
           </h1>
           <p className="text-[16px] md:text-[20px] lg:text-[17px] text-zinc-300 font-semibold lg:text-center">
             {description}
           </p>
-          <div className="tech-used flex flex-row pt-10 lg:py-6 w-full justify-center items-center gap-6">
-            <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
-              {tech1}
-            </h1>
-            <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
-              {tech2}
-            </h1>
-            <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
-              {tech3}
-            </h1>
-            <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
-              {tech4}
-            </h1>
+
+          <div className="tech-used flex justify-center items-center flex-row pt-8 pb-4 lg:pt-6 lg:pb-2 lg:py-6 w-full gap-6">
+            {tech1 && (
+              <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
+                {tech1}
+              </h1>
+            )}
+            {tech2 && (
+              <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
+                {tech2}
+              </h1>
+            )}
+            {tech3 && (
+              <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
+                {tech3}
+              </h1>
+            )}
+            {tech4 && (
+              <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
+                {tech4}
+              </h1>
+            )}
           </div>
-          <div className="demo flex flex-row gap-10 justify-center items-center py-1">
+
+          <div className="demo flex flex-row gap-10 justify-center items-center py-2">
             <a
               href={codeLink}
               target="_blank"

@@ -6,7 +6,7 @@ import { FiGithub } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div id="contact" className="selection:bg-[#8787878a]">
+    <div id="contact" className="contact selection:bg-[#8787878a]">
       <div className="w-full contact py-[4vw] px-[10vw]">
         <div className="upper w-full pb-10">
           <h3 className="text-sky-300 font-bold text-[6vw] sm:text-[5vw] lg:text-[1.5vw] uppercase py-4">
@@ -16,6 +16,7 @@ const Contact = () => {
             Don't be shy! Hit me up! 👇
           </h1>
         </div>
+
         <div className="lower w-full px-2 flex flex-col lg:flex-row justify-start items-start gap-10 lg:gap-20">
           <div className="location flex flex-row justify-center items-center gap-5">
             <div className="icon flex justify-center items-center w-[50px] h-[50px] p-[10px] bg-sky-600 rounded-full">
@@ -47,6 +48,7 @@ const Contact = () => {
             </div>
           </div>
         </div>
+
         <div className="copyright py-[20vw] lg:py-0 lg:pt-[8vw] flex flex-col-reverse lg:flex-row justify-between w-full items-center gap-10 lg:gap-0">
           <div className="left w-full lg:w-1/2">
             <h1 className="text-[3vw] lg:text-[1.4vw] font-bold text-center lg:text-start">
