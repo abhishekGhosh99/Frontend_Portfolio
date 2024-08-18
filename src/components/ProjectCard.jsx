@@ -18,7 +18,7 @@ const ProjectCard = ({
 }) => {
   return (
     <div className="project_card">
-      <motion.div
+      <div
         className={`${className} projects w-full px-0 lg:px-5 xl:px-5 py-6 mb-[10vw] flex flex-col lg:flex-row gap-12`}
       >
         <motion.div
@@ -26,16 +26,26 @@ const ProjectCard = ({
           whileTap={{ scale: 1.1 }}
           drag="x"
           dragConstraints={{ left: -100, right: 100 }}
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ amount: 0.5, once: true }}
+          transition={{ duration: 0.5 }}
           className="left w-full lg:w-1/2 rounded-[20px] flex justify-center items-center"
         >
           <img
             src={projectImage}
-            className="lg:h-[250px] xl:h-[300px] rounded-[20px]"
+            className="project_img lg:h-[250px] xl:h-[300px] rounded-[20px]"
             alt=""
           />
         </motion.div>
 
-        <div className="right w-full flex flex-col justify-end lg:w-1/2 px-0 lg:px-[2vw] xl:px-[2vw] pt-5">
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          viewport={{ amount: 0.5, once: true }}
+          transition={{ duration: 1 }}
+          className="right w-full flex flex-col justify-end lg:w-1/2 px-0 lg:px-[2vw] xl:px-[2vw] pt-5"
+        >
           <h1 className="text-[20px] md:text-[30px] lg:text-[22px] font-bold lg:text-center pb-4">
             {title}
           </h1>
@@ -87,8 +97,8 @@ const ProjectCard = ({
               </span>
             </a>
           </div>
-        </div>
-      </motion.div>
+        </motion.div>
+      </div>
     </div>
   );
 };

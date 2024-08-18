@@ -6,7 +6,10 @@ import { FiGithub } from "react-icons/fi";
 
 const Contact = () => {
   return (
-    <div id="contact" className="contact selection:bg-[#8787878a]">
+    <div
+      id="contact"
+      className="contact selection:bg-[#8787878a] selection:text-[#fff]"
+    >
       <div className="w-full contact py-[4vw] px-[10vw]">
         <div className="upper w-full pb-10">
           <h3 className="text-sky-300 font-bold text-[6vw] sm:text-[5vw] lg:text-[1.5vw] uppercase py-4">
@@ -40,7 +43,7 @@ const Contact = () => {
                 Mail
               </h1>
               <a
-                href=""
+                href="mailto:ag5416106@gmail.com"
                 className="text-[4.5vw] sm:text-[3.5vw] lg:text-[1.4vw]"
               >
                 ag5416106@gmail.com
@@ -57,7 +60,7 @@ const Contact = () => {
           </div>
           <div className="right w-1/2 flex flex-row justify-center lg:justify-end items-center gap-10 lg:gap-5">
             <a
-              href="https://www.linkedin.com/in/abhishek-ghosh-188125226/"
+              href="https://www.linkedin.com/in/abhishekGhoshh/"
               target="_blank"
             >
               <LiaLinkedin className="text-[8vw] lg:text-[3vw] hover:text-blue-400" />

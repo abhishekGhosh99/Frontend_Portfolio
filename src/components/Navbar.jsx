@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useRef, useEffect } from "react";
 import { RiMenuFoldFill } from "react-icons/ri";
 import { GrClose } from "react-icons/gr";
 
 const Navbar = () => {
   const [sidebar, setSidebar] = useState(false);
+  const sidebarRef = useRef(null);
 
   const toggleSidebar = () => {
     setSidebar(!sidebar);
@@ -17,9 +18,27 @@ const Navbar = () => {
     setSidebar(false);
   };
 
+  const handleOutsideClick = (e) => {
+    if (sidebarRef.current && !sidebarRef.current.contains(e.target)) {
+      setSidebar(false);
+    }
+  };
+
+  useEffect(() => {
+    if (sidebar) {
+      document.addEventListener("mousedown", handleOutsideClick);
+    } else {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleOutsideClick);
+    };
+  }, [sidebar]);
+
   return (
     <>
-      <div className="nav fixed w-full flex justify-between items-end px-5 md:px-10 py-5 z-50">
+      <div className="nav fixed w-full flex justify-between items-end px-5 md:px-10 py-5 z-50 bg-gradient box-shadow">
         <div className="left w-1/2">
           <h1 className="text-[20px] text-nowrap lg:text-2xl font-semibold cursor-pointer">
             Abhishek <span>Ghosh</span>
@@ -34,8 +53,11 @@ const Navbar = () => {
 
           {/* For mobile devices */}
           <div
-            className={`sidebar lg:hidden fixed top-0 right-0 h-full bg-gray-800 w-[60%] z-50 ${
-              sidebar ? "block" : "hidden"
+            ref={sidebarRef}
+            className={`bg-gradient sidebar lg:hidden fixed top-0 right-0 h-full w-[60%] z-50 transform transition-transform duration-700 ease-in-out ${
+              sidebar
+                ? "translate-x-0 opacity-100"
+                : "translate-x-full opacity-0"
             }`}
           >
             <button

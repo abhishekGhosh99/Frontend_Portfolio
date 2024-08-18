@@ -6,6 +6,7 @@ import {
   About,
   Portfolio,
   Contact,
+  GoToTopButton,
 } from "../src/components/index";
 
 import LocomotiveScroll from "locomotive-scroll";
@@ -95,6 +96,7 @@ const App = () => {
             <About />
             <Portfolio />
             <Contact />
+            <GoToTopButton />
           </motion.div>
         )}
       </AnimatePresence>

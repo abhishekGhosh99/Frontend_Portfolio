@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { aboutImage, aboutSubImage } from "../assets";
+import { motion } from "framer-motion";
 
 const About = () => {
   const [rotate, setRotate] = useState(0);
@@ -16,9 +17,20 @@ const About = () => {
   return (
     <div
       id="about"
-      className="about w-full px-[8vw] py-[10vh] lg:py-[6vw] flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20"
+      className="about w-full px-[8vw] py-[10vh] lg:py-[6vw] flex flex-col lg:flex-row justify-center items-center gap-10 lg:gap-20 bg-gradient"
     >
-      <div className="left relative w-full lg:w-1/2 flex justify-center items-center lg:px-10">
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ amount: 0.5, once: true }}
+        transition={{
+          duration: 1,
+          type: "spring",
+          stiffness: 50,
+          damping: 10,
+        }}
+        className="left relative w-full lg:w-1/2 flex justify-center items-center lg:px-10"
+      >
         <img src={aboutImage} className="rounded-xl lg:max-w-[120%]" alt="" />
         <div
           style={{ transform: `rotate(${rotate}deg)` }}
@@ -31,9 +43,20 @@ const About = () => {
             alt=""
           />
         </div>
-      </div>
+      </motion.div>
 
-      <div className="right w-full lg:w-1/2 flex flex-col justify-start items-start gap-4">
+      <motion.div
+        initial={{ x: 100, opacity: 0 }}
+        whileInView={{ x: 0, opacity: 1 }}
+        viewport={{ amount: 0.5, once: true }}
+        transition={{
+          duration: 2,
+          type: "spring",
+          stiffness: 50,
+          damping: 10,
+        }}
+        className="right w-full lg:w-1/2 flex flex-col justify-start items-start gap-4"
+      >
         <h3 className="text-[5vw] lg:text-xl font-bold uppercase text-blue-300 pb-6">
           About Me
         </h3>
@@ -52,7 +75,7 @@ const About = () => {
           hands-on experience with REST APIs and collaborative version control
           using Git and GitHub.
         </p>
-      </div>
+      </motion.div>
     </div>
   );
 };

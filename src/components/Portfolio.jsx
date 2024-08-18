@@ -10,7 +10,10 @@ import {
 
 const Portfolio = () => {
   return (
-    <div id="portfolio" className="portfolio w-full px-[8vw] py-[6vw]">
+    <div
+      id="portfolio"
+      className="portfolio w-full px-[8vw] py-[6vw] bg-gradient"
+    >
       <div className="head-text w-full flex flex-col gap-2 py-10">
         <h1 className="text-zinc-200 uppercase font-bold text-[5vw] lg:text-xl">
           portfolio

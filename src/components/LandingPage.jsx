@@ -29,7 +29,7 @@ const LandingPage = () => {
   return (
     <div
       id="home"
-      className="landing-page w-full h-auto px-[9vw] md:px-[10vw] lg:px-[13vw] py-[15vh] md:py-[20vh] lg:py-[28vh] flex flex-col-reverse md:flex-row justify-between gap-[60px] md:gap-[50px] lg:gap-10"
+      className="landing-page w-full h-auto px-[9vw] md:px-[10vw] lg:px-[13vw] py-[15vh] md:py-[20vh] lg:py-[28vh] flex flex-col-reverse md:flex-row justify-between gap-[60px] md:gap-[50px] lg:gap-10 bg-gradient"
     >
       <motion.div
         variants={slideInVariants}

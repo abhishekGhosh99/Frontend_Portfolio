@@ -11,10 +11,17 @@ import {
   materialUIIcon,
   sassIcon,
 } from "../assets";
+import { motion } from "framer-motion";
 
 const TechStack = () => {
   return (
-    <div className="techstack relative w-full bg-zinc-200 text-zinc-100 flex flex-col lg:flex-row justify-center items-center gap-9 px-[10vw] py-10 overflow-hidden">
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ amount: 1, once: true }}
+      transition={{ duration: 1 }}
+      className="techstack relative w-full bg-zinc-200 text-zinc-100 flex flex-col lg:flex-row justify-center items-center gap-9 px-[10vw] py-10 overflow-hidden"
+    >
       <div className="lamp hidden md:flex absolute left-4 sm:left-[22vw] md:left-[28vw] lg:left-[20px] xl:left-[5%] top-7 lg:top-16 xl:top-7 lg:bottom-0 lg:flex flex-row">
         <img
           src={lamp}
@@ -77,7 +84,7 @@ const TechStack = () => {
           className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
       </div>
-    </div>
+    </motion.div>
   );
 };
 
