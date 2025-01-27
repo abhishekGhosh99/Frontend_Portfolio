@@ -19,6 +19,8 @@ import reduxIcon from "./redux_icon.png";
 import materialUIIcon from "./materialUI_icon.png";
 import sassIcon from "./sass_icon.png";
 import movix from "./movix.png";
+import awwards_winning_website from "./awwards_winning_website.png";
+import gsap_icon from "./gsap_icon.webp";
 
 export {
   htmlIcon,
@@ -42,4 +44,6 @@ export {
   materialUIIcon,
   sassIcon,
   movix,
+  awwards_winning_website,
+  gsap_icon,
 };

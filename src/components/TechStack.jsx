@@ -5,11 +5,11 @@ import {
   javascriptIcon,
   reactIcon,
   tailwindIcon,
-  bootstrapIcon,
   lamp,
   reduxIcon,
   materialUIIcon,
   sassIcon,
+  gsap_icon,
 } from "../assets";
 import { motion } from "framer-motion";
 
@@ -54,24 +54,19 @@ const TechStack = () => {
           className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
-          src={bootstrapIcon}
-          alt="bootstrap_icon"
+          src={reactIcon}
+          alt="react_icon"
           className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
-          src={reactIcon}
-          alt="react_icon"
+          src={tailwindIcon}
+          alt="tailwind_icon"
           className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
           src={sassIcon}
           alt="sass_icon"
           className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
-        />
-        <img
-          src={tailwindIcon}
-          alt="tailwind_icon"
-          className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
           src={reduxIcon}
@@ -81,6 +76,11 @@ const TechStack = () => {
         <img
           src={materialUIIcon}
           alt="materialui_icon"
+          className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
+        />
+        <img
+          src={gsap_icon}
+          alt="gsap_icon"
           className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
       </div>

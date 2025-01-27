@@ -1,7 +1,7 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import {
-  visionPro,
+  awwards_winning_website,
   shopper,
   gerichtRestaurant,
   gymExercise,
@@ -77,17 +77,19 @@ const Portfolio = () => {
       />
 
       <ProjectCard
-        projectImage={visionPro}
-        title={"Apple Vison Pro Clone"}
+        projectImage={awwards_winning_website}
+        title={"Awwwards-winning website"}
         description={
-          "Apple Vision Pro is your Gateway to Visual Excellence. It seamlessly blends digital content with your physical space."
+          "Awwwards-winning Zentry website clone using React, Tailwind CSS, and GSAP. The site features stunning animations, seamless interactions, and a modern, responsive design, delivering a smooth user experience. Its elegant UI and high-performance transitions make it a visually captivating and dynamic web project. 🚀✨."
         }
-        tech1={"HTML"}
-        tech2={"CSS"}
-        tech3={"JavaScript"}
+        tech1={"React"}
+        tech2={"Tailwind CSS"}
+        tech3={""}
         tech4={"GSAP"}
-        codeLink={"https://github.com/abhishekGhosh99/Apple-Vision-Pro"}
-        liveDemoLink={"https://abhishekghosh99.github.io/Apple-Vision-Pro/"}
+        codeLink={"https://github.com/abhishekGhosh99/Awwards-winning-website"}
+        liveDemoLink={
+          "https://abhishekghosh99.github.io/Awwards-winning-website/"
+        }
       />
     </div>
   );

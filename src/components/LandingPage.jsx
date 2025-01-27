@@ -65,6 +65,15 @@ const LandingPage = () => {
             <FiGithub className="text-[7vw] md:text-[5vw] lg:text-[2.5vw] hover:text-blue-400" />
           </a>
         </div>
+        <div className="download-cv-btn py-10">
+          <a
+            href={`${import.meta.env.BASE_URL}resume.pdf`}
+            download="Abhishek_Ghosh_Resume.pdf"
+            className="px-4 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition duration-300"
+          >
+            Download CV
+          </a>
+        </div>
       </motion.div>
 
       <div className="right w-full md:w-1/2 h-auto flex justify-center items-start ">
