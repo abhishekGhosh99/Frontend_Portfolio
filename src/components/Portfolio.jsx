@@ -27,7 +27,7 @@ const Portfolio = () => {
         projectImage={movix}
         title={"Movix Movie App"}
         description={
-          "Movix is a web app for exploring movies and TV shows. Discover trailers, cast details, ratings, and more. Browse by categories like Popular, Trending, and Top Rated to find your next entertainment fix."
+          "A responsive movie app built with React.js and Redux Toolkit using the TMDB API. Users can explore trending, top-rated movies and TV shows with dynamic routing, search, and lazy loading. Styled with Tailwind CSS and fully responsive."
         }
         tech1={"React"}
         tech2={"Sass"}
@@ -55,7 +55,7 @@ const Portfolio = () => {
         projectImage={shopper}
         title={"Shopper | E-commerce Web App"}
         description={
-          "The React-Tailwind E-commerce Web App is a modern and visually appealing online shopping platform designed and developed using React.js for the frontend and Tailwind CSS for a sleek and responsive user interface."
+          "The React-Tailwind E-commerce Web App  where users can browse products, view details, and manage a live cart. Styled with Tailwind CSS and optimized for responsive design and smooth user interaction."
         }
         tech1={"React"}
         tech2={"Tailwind CSS"}
@@ -68,7 +68,7 @@ const Portfolio = () => {
         projectImage={gerichtRestaurant}
         title={"Gericht Restaurant"}
         description={
-          "Gericht Restaurant is restaurant where you find special meals, breakfast, lunch, dinner, wines, beers, cocktails as well."
+          "A stylish and modern restaurant landing page built with React.js and styled using CSS modules. The site features elegant UI sections like menu, about, chef’s word, and contact form — crafted to reflect a premium dining experience. Built with full responsiveness and attention to detail in layout and design."
         }
         tech1={"React"}
         tech2={"Vanilla CSS"}
