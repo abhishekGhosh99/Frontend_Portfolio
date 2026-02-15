@@ -27,7 +27,7 @@ const Portfolio = () => {
         projectImage={movix}
         title={"Movix Movie App"}
         description={
-          "A responsive movie app built with React.js and Redux Toolkit using the TMDB API. Users can explore trending, top-rated movies and TV shows with dynamic routing, search, and lazy loading. Styled with Tailwind CSS and fully responsive."
+          "A responsive movie app built with React.js and Redux Toolkit using the TMDB API. Users can explore trending, top-rated movies and TV shows with dynamic routing, search, and lazy loading. Styled with SCSS(Sass) and fully responsive."
         }
         tech1={"React"}
         tech2={"Sass"}
