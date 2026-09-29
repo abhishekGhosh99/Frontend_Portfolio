@@ -61,19 +61,23 @@ const About = () => {
           About Me
         </h3>
         <h1 className="text-[5vw] lg:text-[2.5vw] font-bold">
-          Front-end Developer based in Delhi, India 📍
+          Frontend Developer based in Delhi, India📍
         </h1>
-        <p className="text-[18px] lg:text-[16px] font-medium text-zinc-300">
-          Hey, my name is Abhishek, and I am a Frontend Developer with a passion
-          for creating and developing clean, user-friendly UI/UX designs.
+        <p className="text-[18px] lg:text-[18px] font-medium text-zinc-300">
+          Hey, I'm Abhishek, a Frontend Developer from Delhi, India, passionate
+          about creating clean, responsive, and user-friendly web applications.
         </p>
-        <p className="text-[18px] lg:text-[16px] font-medium text-zinc-300">
-          I am a highly motivated web developer with a solid foundation in
-          frontend technologies such as HTML, CSS, JavaScript, and React.js. My
-          expertise includes modern frontend frameworks / libraries like
-          React.js, Redux Toolkit, and Tailwind CSS. Additionally, I have
-          hands-on experience with REST APIs and collaborative version control
-          using Git and GitHub.
+        <p className="text-[18px] lg:text-[18px] font-medium text-zinc-300">
+          I specialize in React.js, Next.js, JavaScript, and TypeScript, with
+          experience using Tailwind CSS, Redux Toolkit, and modern UI libraries
+          to build scalable interfaces.
+        </p>
+        <p className="text-[18px] lg:text-[18px] font-medium text-zinc-300">
+          I've also gained hands-on industry experience through a React.js
+          development internship, working with React, TypeScript, Tailwind CSS,
+          and data-driven components. I also have experience integrating REST
+          APIs, authentication, state management, Git, and GitHub into web
+          applications.
         </p>
       </motion.div>
     </div>

@@ -55,7 +55,7 @@ const Contact = () => {
         <div className="copyright py-[20vw] lg:py-0 lg:pt-[8vw] flex flex-col-reverse lg:flex-row justify-between w-full items-center gap-10 lg:gap-0">
           <div className="left w-full lg:w-1/2">
             <h1 className="text-[3vw] lg:text-[1.4vw] font-bold text-center lg:text-start">
-              Copyright © 2024. All rights are reserved.
+              Copyright © 2025. All rights are reserved.
             </h1>
           </div>
           <div className="right w-1/2 flex flex-row justify-center lg:justify-end items-center gap-10 lg:gap-5">

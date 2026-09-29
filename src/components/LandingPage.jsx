@@ -45,7 +45,7 @@ const LandingPage = () => {
           className="w-full text-[10vw] sm:text-[7.6vw] md:text-[7vw] lg:text-[5vw] font-bold leading-[11vw] md:leading-[9vw] lg:leading-[6vw] text-center lg:text-start"
         >
           <TypeAnimation
-            sequence={["Front-End Developer", 1000]}
+            sequence={["Frontend Developer", 1000]}
             wrapper="span"
             speed={-40}
             style={{ display: "inline-block" }}
@@ -55,7 +55,7 @@ const LandingPage = () => {
         </motion.h1>
         <p className="lg:leading-[2.5vw] py-6 font-semibold text-[18px] sm:text-[20px] lg:text[20px] text-center lg:text-start">
           Hi, I'm Abhishek Ghosh. A passionate Frontend Developer based in
-          Delhi, India. 📍
+          📍Delhi, India.
         </p>
         <div className="icons flex flex-row justify-center lg:justify-start items-center w-full px-3 gap-10 lg:gap-5 ">
           <a href="https://www.linkedin.com/in/abhishekGhoshh/" target="_blank">

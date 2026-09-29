@@ -7,9 +7,11 @@ import {
   tailwindIcon,
   lamp,
   reduxIcon,
-  materialUIIcon,
-  sassIcon,
-  gsap_icon,
+  framerIcon,
+  nodejsIcon,
+  typescriptIcon,
+  nextjsIcon,
+  mongodbIcon,
 } from "../assets";
 import { motion } from "framer-motion";
 
@@ -22,7 +24,7 @@ const TechStack = () => {
       transition={{ duration: 1 }}
       className="techstack relative w-full bg-zinc-200 text-zinc-100 flex flex-col lg:flex-row justify-center items-center gap-9 px-[10vw] py-10 overflow-hidden"
     >
-      <div className="lamp hidden md:flex absolute left-4 sm:left-[22vw] md:left-[28vw] lg:left-[20px] xl:left-[5%] top-7 lg:top-16 xl:top-7 lg:bottom-0 lg:flex flex-row">
+      <div className="lamp hidden md:flex absolute left-4 sm:left-[22vw] md:left-[28vw] lg:left-[20px] xl:left-[8%] top-7 lg:top-16 xl:top-7 lg:bottom-0 lg:flex flex-row">
         <img
           src={lamp}
           className="w-[80px] lg:w-[110px] lg:h-[140px] xl:w-[100px] xl:h-[100px] opacity-70"
@@ -64,24 +66,35 @@ const TechStack = () => {
           className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
-          src={sassIcon}
-          alt="sass_icon"
+          src={framerIcon}
+          alt="framer_icon"
           className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
           src={reduxIcon}
           alt="redux_icon"
-          className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
+          className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
+        />
+
+        <img
+          src={typescriptIcon}
+          alt="typescript_icon"
+          className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
-          src={materialUIIcon}
-          alt="materialui_icon"
-          className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
+          src={nextjsIcon}
+          alt="nextjs_icon"
+          className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
         <img
-          src={gsap_icon}
-          alt="gsap_icon"
-          className="w-[50px] rounded-xl  hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
+          src={nodejsIcon}
+          alt="nodejs_icon"
+          className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
+        />
+        <img
+          src={mongodbIcon}
+          alt="mongodb_icon"
+          className="w-[50px] rounded-xl hover:scale-110 hover:-translate-y-2 hover:ease-in-out hover:duration-200"
         />
       </div>
     </motion.div>

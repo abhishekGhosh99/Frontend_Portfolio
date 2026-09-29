@@ -13,6 +13,8 @@ const ProjectCard = ({
   tech2,
   tech3,
   tech4,
+  tech5,
+  tech6,
   codeLink,
   liveDemoLink,
 }) => {
@@ -53,7 +55,7 @@ const ProjectCard = ({
             {description}
           </p>
 
-          <div className="tech-used flex justify-center items-center flex-row pt-8 pb-4 lg:pt-6 lg:pb-2 lg:py-6 w-full gap-6">
+          <div className="tech-used flex justify-center items-center flex-row pt-8 pb-4 lg:pt-6 lg:pb-2 lg:py-6 w-full gap-6 flex-wrap">
             {tech1 && (
               <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
                 {tech1}
@@ -72,6 +74,16 @@ const ProjectCard = ({
             {tech4 && (
               <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
                 {tech4}
+              </h1>
+            )}
+            {tech5 && (
+              <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
+                {tech5}
+              </h1>
+            )}
+            {tech6 && (
+              <h1 className="text-[15px] md:text-[20px] lg:text-[17px] font-extrabold">
+                {tech6}
               </h1>
             )}
           </div>

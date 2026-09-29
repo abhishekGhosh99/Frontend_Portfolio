@@ -16,11 +16,15 @@ import landingPageAvatar from "./landingPage_avatar.jpg";
 import aboutSubImage from "./about_sub_image.png";
 import gymExercise from "./gym_exercise.png";
 import reduxIcon from "./redux_icon.png";
-import materialUIIcon from "./materialUI_icon.png";
-import sassIcon from "./sass_icon.png";
+import framerIcon from "./framer_icon.png";
+import nodejsIcon from "./nodejs_icon.png";
+import nextjsIcon from "./nextjs_icon.png";
+import mongodbIcon from "./mongodb_icon.png";
 import movix from "./movix.png";
 import awwards_winning_website from "./awwards_winning_website.png";
-import gsap_icon from "./gsap_icon.webp";
+import typescriptIcon from "./typescript_icon.png";
+import learnxDashboard from "./learnx-dashboard.png";
+import ridenow from "./ridenow.png";
 
 export {
   htmlIcon,
@@ -41,9 +45,13 @@ export {
   aboutSubImage,
   gymExercise,
   reduxIcon,
-  materialUIIcon,
-  sassIcon,
+  framerIcon,
+  nodejsIcon,
+  nextjsIcon,
+  mongodbIcon,
   movix,
   awwards_winning_website,
-  gsap_icon,
+  typescriptIcon,
+  learnxDashboard,
+  ridenow,
 };
